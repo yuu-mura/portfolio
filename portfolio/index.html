@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>murata's portfolio</title>
+ <link rel="stylesheet" href="css/styles.css">
+ <link rel="icon" href="image/back.jpg">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script>
+  $(function(){
+  // #で始まるa要素をクリックした場合に処理
+  $('a[href^="#"]').click(function(){
+    // 移動先を0px調整する。0を30にすると30px下にずらすことができる。
+    var adjust = 0;
+    // スクロールの速度（ミリ秒）
+    var speed = 800;
+    // アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
+    var href= $(this).attr("href");
+    // 移動先を取得 リンク先(href）のidがある要素を探して、targetに代入
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    // 移動先を調整 idの要素の位置をoffset()で取得して、positionに代入
+    var position = target.offset().top + adjust;
+    // スムーススクロール linear（等速） or swing（変速）
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+});
+$(function(){
+    $(window).scroll(function (){
+        $('.fadein').each(function(){
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > targetElement - windowHeight + 300){
+                $(this).css('opacity','1');
+                $(this).css('transform','translateY(0)');
+            }
+        });
+    });
+});
+  </script>
+</head>
+<body>
+ <header>
+  <section id="header1">
+   <div id="top">
+    <p>フリーランスエンジニア</p>
+    <h1>村田 悠輔</h1>
+    <p>portfolio</p>
+   </div>
+   <div id="menu">
+    <a href="#" class="menu1"><p>ホーム</p></a>
+    <a href="#profile" class="menu2"><p>プロフィール</p></a>
+    <a href="#service" class="menu3"><p>サービス</p></a>
+    <a href="#skill" class="menu4"><p>スキル</p></a>
+    <a href="#works" class="menu5"><p>制作実績</p></a>
+    <a href="#contact" class="menu6"><p>お問い合わせ</p></a>
+   </div>
+  </section>
+
+  <section id="header2">
+  <div class="pc">
+    <img src="image/topp.jpg" alt="わかりやすく相手に伝える">
+  </div>
+  <div class="sp">
+    <img src="image/携帯.jpg" alt="わかりやすく相手に伝える">
+  </div>
+</section>
+</header>
+
+  <main>
+   <section id="profile">
+    <div class="title fadein">
+     <h1>profile</h1>
+     <p>プロフィール</p>
+    </div>
+    <h2>現役大学生でフリーランスエンジニアとして活動しております。</h2>
+
+    <div class="container">
+     <section id=side>
+      <div>
+       <img id="grouth1" src="image/矢印.png" alt="矢印">
+      </div>
+      <div>
+       <img id="grouth2" src="image/矢印.png" alt="矢印2">
+       <p>仕事を獲得</p>
+      </div>
+      
+     </section>
+
+     <section id="content">
+      <section id="one" class="fadein">
+       <p class="small">1年後の</p>
+       <h1>私</h1>
+       <p>たくさんの方々と仕事を通じてご一緒させていただき、様々な実績を持っています。技術的にはLaravelなども使いこなせるため、様々な案件にも対応可能です。</p>
+      </section>
+
+      <section id="three">
+        <p class="small">3ヵ月後の</p>
+       <h1>私</h1>
+       <p>ありがたいことに仕事の依頼をしてくれる方が徐々に増えており、プログラミングスキルのかなり向上しました。WordPressの操作にも慣れ、SEOにも強いサイト制作が可能です。</p>
+      </section>
+
+      <section id=now class="fadein">
+        <p class="small">現在の</p>
+       <h1>私</h1>
+       <p>たくさんの人とのサイト制作を通じて出会い、お役に立てればと考えております。
+       <span>成長したいという気持ちだけは負けません。</span>HTMLとCSS、JavaScript、jQueryのコーディングが可能です。PHPも基礎的なものでしたら対応できます。</p>
+      </section>
+     
+
+    </div>
+   </section>
+     <section id="greeting" class="fadein">
+      <h1>紹介</h1>
+      <p>幼稚園の頃からサッカーをしています。
+
+      今までサッカーを愛し続け、高校時代にはベンチを温め続けました。
+      
+      ​そこで学んだコミュニケーションの姿勢などは健在です。このお仕事を通してたくさんの人と関われることを楽しみにしています。</p>
+      </section>
+    </section>
+
+
+   <section id="service" class="fadein">
+     <div class="big">
+
+       <div class="title fadein">
+         <h1>service</h1>
+         <p>サービス</p>
+        </div>
+        
+        <div class="items" class="fadein">
+          
+          <section  class="fadein">
+            <div class="pic">
+              <img src="image/コーディング.png" alt="コーディング">
+            </div>
+            <div class="info">
+              <h1>コーディング</h1>
+              <h2>coding</h2>
+              <p>基礎基本を意識し、デザインに適したコーディングを行います。2021年3月25日の村田はHTML、CSS、JavaScript、jQueryのコーディングが可能です。</p>
+            </div>
+          </section>
+          
+          <section>
+            <div class="pic">
+              <img src="image/表紙.png" alt="デザイン">
+            </div>
+            <div class="info">
+              <h1>デザイン</h1>
+              <h2>design</h2>
+              <p>ヒヤリングを大事にし、サイト制作の目的に準じたデザインを作成いたします。見てくれる人を常に意識し、使いやすいデザインを心がけております。</p>
+            </div>
+          </section>
+          
+          <section>
+            <div class="pic">
+              <img src="image/安心感4.png" alt="サイト制作">
+            </div>
+            <div class="info">
+              <h1>サイト制作</h1>
+              <h2>site Production</h2>
+              <p>やさしい雰囲気のサイト制作を制作することを得意としています。現在は主にノーコードツールを使用してサイトを制作することが多いですが、一からコーディングしてサイトを制作することも可能です。</p>
+            </div>
+          </section>
+        </div>
+      </div>
+      </section>
+
+   <section id="skill" class="fadein">
+    <div class="title">
+     <h1>skill</h1>
+     <p>技術</p>
+    </div>
+
+    <div id="graph" class="fadein">
+     <img src="image/graph.jpg" alt="グラフ">
+    </div>
+   </section>
+
+   <section id="works" >
+    <div class="title">
+     <h1>Works</h1>
+     <p>制作実績</p>
+
+    </div>
+   </section>
+
+   <section id="contact" class="fadein">
+    <div class="title">
+     <h1>Contact</h1>
+     <p>お問い合わせ</p>
+
+    </div>
+   </section>
+  </main>
+</body>
+</html>

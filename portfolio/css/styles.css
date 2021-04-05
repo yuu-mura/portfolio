@@ -1,0 +1,476 @@
+
+html, body{
+ margin: 0;
+ font-family:'ＭＳ Ｐ明朝', 'ＭＳ 明朝', 'Courier New', Courier, monospace;
+ font-size: 16px;
+ background: rgba(250, 255, 255, 0.6);
+ color: rgb(99, 97, 97);
+ text-shadow: 0 0 1px 2px rgb(146, 143, 143);
+}
+.fadein{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s;
+}
+p{
+  font-size: 16px;
+}
+
+/*----------------------- header1----------------------- */
+#top{
+ text-align: center;
+ margin: 10px;
+ color: rgb(201, 198, 198);
+ text-shadow: 1px 1px 1px black;
+}
+#top p{
+margin: 0;
+}
+#top h1{
+margin: 0;
+}
+#menu{
+  max-width: 380px;
+ display: flex;
+ align-items: center;
+ margin:10px auto;
+ width: 100%;
+}
+#menu a{
+ text-decoration: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+#menu a:hover{
+ opacity: 0.8;
+}
+#menu p{
+ margin: 0 7px;
+ text-shadow:   0 0 1em #fff, 0 0 0.2em #fff;
+ white-space: nowrap;
+ padding: 4px;
+
+}
+.menu1{
+ background: rgba(255, 222, 95, 0.9);
+ position: relative;
+ left: 10px;
+ border-radius: 5px;
+}
+.menu2{
+background: rgba(254, 96, 96, 0.9);
+position: relative;
+top:30px ;
+left: -20px;
+}
+.menu3{
+background: rgba(12, 245, 245, 0.9);
+position: relative;
+left:-50px;
+}
+.menu4{
+background: rgba(218, 250, 7, 0.9);
+position: relative;
+top:30px;
+left: -80px;
+}
+.menu5{
+background: rgba(46, 237, 12, 0.9);
+position: relative;
+left: -83px;
+}
+.menu6{
+background: rgba(200, 47, 255, 0.9);
+position: relative;
+left: -145px;
+top: 30px;
+}
+
+/* -----------------------header2---------------------------- */
+#header2{
+ margin-top: 40px;
+ background-size: cover;
+ height: auto;
+ width: 100%;
+ position: relative;
+}
+
+#header2 img{
+  width: 100%;
+  height: auto;
+}
+#header2 .sp{
+  display: block;
+}
+#header2 .pc{
+  display: none;
+}
+
+/* ------------------------------profile------------------------------ */
+#profile{
+ max-width: 980px;
+ margin: 70px auto 40px;
+ width: 90%;
+}
+.title h1{
+  margin: 0;
+  font-size: 3rem;
+  color: rgb(201, 198, 198);
+  text-shadow: 1px 1px 1px black;
+ }
+ .title p{
+  margin: 0 0 30px 30px;
+  font-size: 0.9rem;
+  color: rgb(117, 115, 115);
+  text-shadow: 1px 1px 1px rgb(46, 46, 46);
+ }
+
+ .container{
+  width: 100%;
+  display: flex;
+ }
+ 
+ #side{
+  width: 20%;
+ }
+ 
+ #content{
+  width: 80%;
+ }
+
+#profile > h2{
+ font-size: 0.9rem;
+ width: 210px;
+ margin-left: auto;
+ margin-bottom: 0;
+ text-align: center;
+ color: rgb(112, 80, 80);
+ width:245px;
+}
+
+#side div img{
+  width: 100%;
+  margin-bottom: 50px;
+  animation: up 5s 0 infinite;
+}
+
+#content > section{
+ margin-top: 1rem;
+ padding: 0 2rem 1.5rem 2rem;
+ height: auto;
+}
+#content section h1{
+ margin-right:10px;
+
+ padding: 6px 10px;
+ display: inline-block;
+ margin-bottom: 8px;
+ 
+}
+/* #content section h1, h1 span{
+  animation:up 3s  ease forwards;
+} */
+#content .small{
+  display: inline-block;
+  background: rgb(241, 241, 35);
+  padding: 15px 40px 7px 7px;
+  font-size: 0.3em;
+  box-shadow:4px 4px 0 rgb(179, 179, 8) ;
+  animation:up 4s   ease forwards;
+}
+#content  h1{
+  background: rgba(0,0,0,0);
+  box-shadow: none;
+  transform: translateX(-40px);
+}
+@keyframes up{
+  0%{
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  50%{
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+#content section p{
+  max-width: 350px;
+  margin: 5px auto 16px;
+ line-height: 1.4;
+ font-size: 0.8rem;
+}
+
+#one{
+ background: rgba(253, 184, 161, 0.5);
+ border: solid 4px #f3a78f;
+ border-radius: 50%;
+ padding: 0 20px 20px 20px;
+}
+#three{
+ background: rgba(181, 188, 240, 0.5);
+ border: solid 4px #8f98e2;
+ border-radius: 50%;
+ padding: 0 20px 20px 20px;
+}
+#now{
+ background: rgba(177, 211, 187, 0.5);
+ border: solid 4px #bada55;
+ border-radius: 50%;
+ padding: 0 20px 20px 20px;
+}
+#now p span{
+  color: rgb(247, 91, 91);
+  font-size: 0.9rem;
+}
+#greeting{
+ height: auto;
+ max-width: 200px;
+ margin: 0 auto 60px;
+ background: rgba(178, 253, 234, 0.5);
+ border: solid 4px #0ee8b2;
+ padding: 0 20px 20px 20px;
+
+}
+#greeting p{
+  line-height: 1.4;
+ font-size: 0.8rem;
+ max-width: 350px;
+ margin: 20px auto;
+}
+
+
+
+
+
+/* -----------------------service------------------------- */
+#service{
+  width: 100%;
+  margin: 40px auto 0;
+  background: rgba(360, 280, 240, 5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.big{
+width: 90%;
+margin: 40px auto;
+}
+
+#service .items > section{
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+}
+
+.items section .pic{
+ width: 45%;
+ padding: 0 auto;
+text-align: center;
+
+}
+.pic img{
+ width: 100%;
+ align-items: center;
+ border-radius: 10px;
+ margin: 20px auto;
+ vertical-align: middle;
+}
+.items .info{
+ width: 50%;
+}
+.info section p:last-Child{
+ width: 110%;
+}
+
+.info h1{
+margin-bottom: 0;
+text-align: center;
+letter-spacing: 0.1em;
+margin-top: 8px;
+color: rgb(201, 198, 198);
+text-shadow: 1px 1px 3px black;
+font-weight: bold;
+}
+.info h2{
+ margin: 0;
+ font-size: 0.6rem;
+ font-weight: bold;
+ letter-spacing: 1em;
+ color: gray;
+ text-align: right;
+}
+.info p{
+ margin: 10px auto 16px;
+ font-size: 0.8rem;
+ max-width: 300px;
+}
+#service .items > section:nth-Child(even){
+ flex-direction: row-reverse;
+}
+
+
+/* -------------------------skill------------------------------ */
+#skill{
+ width: 90%;
+ margin: 70px auto 0;
+}
+
+#skill #graph{
+ text-align: center;
+}
+
+#skill img{
+ width: 80%;
+ margin: 20px auto;
+ max-width: 500px;
+}
+
+
+/* -------------------------works--------------------------------- */
+#works{
+ width: 90%;
+ margin: 30px auto 0;
+}
+
+#contact{
+ width: 90%;
+ margin: 30px auto 0;
+}
+
+
+/* 600以上 */
+@media screen and (min-width:600px){
+html, body{
+  font-size: 20px;
+}
+ #header1{
+  display: flex;
+  justify-content: space-between;
+ }
+ 
+ #header2 .sp{
+   display: none;
+ }
+ #header2 .pc{
+   display: block;
+ }
+ #top{
+  margin: 20px 0 0 10px;
+  width: 30%;
+  line-height: 1.3;
+ }
+ #top p{
+ margin: 0;
+ }
+ #top h1{
+ margin: 0;
+ }
+ #menu{
+  display: flex;
+  align-items: right;
+  margin-right: 10px;
+  width: 330px;
+  margin-top: 10px;
+ }
+ #menu a{
+  text-decoration: none;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin-right: 10px;
+ }
+ #menu p{
+  margin: 0 7px;
+  padding:10px 7px;
+ }
+ .menu1, .menu2 , .menu3, .menu4, .menu5, .menu6{
+  position: static;
+  margin-right: 5px;
+ }
+ #profile h2{
+  width: 100%;
+  display: inline-block;
+  white-space: nowrap;
+  margin-left: auto;
+text-align: right;
+margin-right: 30px;
+ }
+ 
+#content > section{
+  width: 60%;
+ margin-left: auto;
+ margin-top:40px ;
+ min-height: 200px;
+ }
+}
+.info p{
+  line-height: 1.3;
+}
+.items > section{
+  margin-top: 20px;
+ }
+ 
+
+/* ブレイクポイント1280px */
+@media screen and (min-width:800px){
+  html, body{
+    font-size:21px ;
+  }
+  #profile > h2{
+    font-size: 1.3rem;
+    position: relative;
+    top: 30px;
+  }
+  #grouth2{
+    display: none;
+  }
+  #grouth1{
+    position: relative;
+    top: 10rem;
+  }
+  #content{
+    margin-top: 100px;
+  }
+  #content section h1{
+    padding: 8px 15px;
+  }
+  #greeting{
+    width: auto;
+    max-width: 400px;
+  }
+  #service .items > section{
+    display: block;
+    max-width: 900px;
+    text-align: center;
+    width: 400px;
+  }
+  .items{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 60px;
+  }
+  .items section .pic{
+    display: inline-block;
+    width: auto;
+    max-width: 220px;
+   height: 180px;
+  }
+  .items section .pic img{
+    height: 100%;
+  }
+  .items .info{
+    width: 90%;
+    margin: 50px 0 0 10px;
+  }
+  .info h1{
+    margin: 10px;
+  }
+  .info h2{
+    margin-bottom: 30px;
+  }
+}
